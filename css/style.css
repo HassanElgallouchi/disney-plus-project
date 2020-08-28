@@ -1,0 +1,14 @@
+body {
+    background: #040714 url(../img/olp_hero_mobile_UKI_FR.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+#hero {
+    width: 100%;
+}
+section img {
+    width: 100%;
+}
