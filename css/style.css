@@ -147,8 +147,13 @@ header .container > nav > ul > li > a {
 .arrow-rate {
     display: block;
     /*animation: name duration timing-function delay iteration-count direction fill-mode;
-    */animation: example 1s infinite;
-    -moz-animation: example 1s infinite;
+    */animation: example 2s infinite;
+    -moz-animation: example 2s infinite;
+    width: 100%;
+    margin-top: 20px;
+}
+.arrow-rate > a > img {
+    width: 20px;
 }
 /*********** END HERO SECTION *************/
 
@@ -311,4 +316,16 @@ footer .container .copyright {
         -ms-transform: translateY(-3.5px);
         -o-transform: translateY(-3.5px);
 }
+}
+
+
+select, option {
+    /* -webkit-appearance: none; Pour avoir le contrôle de l'apparence sur WebKit/Chromium */
+    /* -moz-appearance: none; Pour avoir le contrôle sur l'apparence sur Gecko */
+    /* Pour avoir le contrôle sur l'apparence et sur Trident (IE)
+       Notez que cela fonctionne aussi sur Gecko et a des effets limités sur WebKit */  
+    background: #040714;
+    border: none;
+    color: #fff;
+    padding: 0;
 }
