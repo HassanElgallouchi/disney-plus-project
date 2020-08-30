@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Disny Plus Project</title>
+    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -19,34 +20,36 @@
 
     <main>
         <section id="hero" class="hero">
-            <div class="contaner">
-                <img src="./img/logo-nopad.svg" alt="" />
+            <div class="container">
+                <!-- <div class="logo"> -->
+                    <img src="./img/logo-nopad.svg" alt="" >
+                <!-- </div> -->
                 <h1>5 mondes. 1 destination.</h1>
-                <span>Lorem ipsum dolor sit.</span>
                 <div>
-                    <div>
+                    <div class="plan">
                         <h3>6,99 €<span> par mois</span></h3>
                         <p>Sans engagement.* Voir conditions **</p>
-                        <a href="#">LINK</a>
+                        <a href="#">maintenant en streaming</a>
                     </div>
-                    <div>
+                    <div class="plan">
                         <h3>69,99 €<span> pour un an</span></h3>
                         <p>Économisez plus de 15 %. Voir conditions.**</p>
-                        <a href="#">LINK</a>
+                        <a href="#">économiser sur 12 mois</a>
                     </div>
                 </div>
                 <p>*Résiliation effective à la fin de la période de facturation en cours. **Comparatif entre 12 mois
-                    d'abonnement mensuel et l'abonnement annuel.</p>
-                    <div>
-                        <img src="./img/disney-franchise-logos.png" alt="">
-                    </div>
+                    d'abonnement mensuel et l'abonnement annuel.
+                </p>
+                <div class="partner">
+                    <img src="./img/disney-franchise-logos.png" alt="">
+                </div>
                 <div>
                     <a href="#">V</a>
                 </div>
             </div>
         </section>
 
-        <section>
+        <section id="dynamic-content" class="dynamic-content">
             <div class="container">
                 <div>
                     <img src="./img/EU_DynamicContentTile[2].png" alt="">
@@ -60,7 +63,7 @@
             </div>
         </section>
 
-        <section>
+        <section id="tv-screen" class="tv-screen">
             <div class="container">
                 <div>
                     <img src="./img/olp_side_align_devicelockup_fr-FR.jpg" alt="">
@@ -73,7 +76,7 @@
             </div>
         </section>
 
-        <section>
+        <section id="news" class="news">
             <div class="container">
                 <div>
                     <img src="./img/FR_OLP1_originals_imagery_June_jpg.jpg" alt="">
@@ -86,7 +89,7 @@
             </div>
         </section>
 
-        <section>
+        <section id="avatar" class="avatar">
             <div class="container">
                 <div>
                     <img src="./img/olp_side_align_avatar_english.jpg" alt="">
@@ -98,11 +101,10 @@
                 </div>
             </div>
         </section>
-        <section>
+
+        <section id="access-device" class="access-device">
             <div class="container">
-                <div>
                     <h2>Accessible sur vos appareils préférés</h2>
-                </div>
                 <div>
                     <div>
                         <img src="./img/device-group-tv.png" alt="">
@@ -133,7 +135,8 @@
                         <h3>Mobiles et tablettes</h3>
                         <ul>
                             <li>Tablettes Amazon Fire</li>
-                            <li>Mobiles et tablettes Android</li>
+                            <li>Mobiles et tablettes</li>
+                            <li>Android</li>
                             <li>iPhone & iPad</li>
                         </ul>
                     </div>
@@ -156,18 +159,18 @@
             <div>
                 <img src="./img/logo-nopad.svg" alt="">
             </div>
-            <p>
-                <a href="">Conditions générales d'abonnement</a>
-                <a href="">Règles de Respect de la Vie Privée</a>
-                <a href="">Droits Données dans l'UE et au R-U</a>
-                <a href="">Modalités relatives aux cookies</a>
-                <a href="">Publicités ciblées par centres d'intérêt</a>
-                <a href="">Appareils compatibles</a>
-                <a href="">Aide</a>
-                <a href="">Gérer vos préférences</a>
-                <a href="">À propos de Disney+</a>
+            <p class="information">
+                <a href="#">Conditions générales d'abonnement</a>
+                <a href="#">Règles de Respect de la Vie Privée</a>
+                <a href="#">Droits Données dans l'UE et au R-U</a>
+                <a href="#">Modalités relatives aux cookies</a>
+                <a href="#">Publicités ciblées par centres d'intérêt</a>
+                <a href="#">Appareils compatibles</a>
+                <a href="#">Aide</a>
+                <a href="#">Gérer vos préférences</a>
+                <a href="#">À propos de Disney+</a>
             </p>
-            <p>
+            <p class="copyright">
                 © Disney. Tous droits réservés.
             </p>
         </div>

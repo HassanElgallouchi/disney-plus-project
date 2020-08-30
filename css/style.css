@@ -1,3 +1,15 @@
+@font-face {
+    font-family: 'Avenir Roman';
+    src: url(../fonts/Avenir-Roman-12.woff);
+}
+@font-face {
+    font-family: 'Teko';
+    src: url(../fonts/Teko-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
 body {
     background: #040714 url(../img/olp_hero_mobile_UKI_FR.jpg);
     background-size: contain;
@@ -5,10 +17,185 @@ body {
     margin: 0;
     padding: 0;
     color: #fff;
+    font-family: Teko, Avenir Roman, Verdana, Geneva, Tahoma, sans-serif;
 }
-#hero {
+section {
+    padding: 40px 20px;
+}
+
+/*********** START HERO SECTION *************/
+.hero {
     width: 100%;
 }
-section img {
+.hero .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.hero .container > img {
     width: 100%;
+    width: 42%;
+    max-width: 160px;
+}
+.hero .container > h1 {
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+.hero .container > div > div > h3 {
+    font-size: 24px;
+    margin: 0 0 5px;
+}
+.hero .container > div > div > h3 > span {
+    opacity: .7;
+    font-size: 14px;
+    font-weight: normal;
+}
+.hero .container > div > div > p {
+    opacity: .7;
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-family: Avenir Roman;
+}
+.hero .container > div > div > a {
+    background-color: #0072d2;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    width: 100%;
+    display: block;
+    text-align: center;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+.hero .container > p {
+    font-size: 10px;
+    opacity: .7;
+}
+.partner {
+    display:  none;
+}
+.hero .container > div > div.plan {
+    padding:  15px 0;
+}
+.hero .container > div > div:first-child {
+    border-bottom: 2px solid hsla(0,0%,100%,.2);
+}
+/*********** END HERO SECTION *************/
+
+
+/*********** START HERO SECTION *************/
+.dynamic-content .container,
+.tv-screen .container,
+.news .container,
+.avatar .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.dynamic-content .container > div > img,
+.tv-screen .container > div > img,
+.news .container > div > img,
+.avatar .container > div > img {
+    width: 100%;
+}
+.dynamic-content .container > div > h2,
+.tv-screen .container > div > h2,
+.news .container > div > h2,
+.avatar .container > div > h2 {
+    margin: 0 0 16px;
+    font-size: 26px;
+}
+.dynamic-content .container > div > p,
+.tv-screen .container > div > p,
+.news .container > div > p,
+.avatar .container > div > p {
+    color: hsla(0,0%,75.3%,.8);
+    font-size: 14px;
+}
+
+/******************************/
+.access-device .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+.access-device .container > h2 {
+    text-align: center;
+}
+.access-device .container > div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:  column;
+    align-content: center;
+}
+.access-device .container > div {
+    display: flex;
+    flex-direction:  row;
+    flex-wrap: wrap;
+}
+.access-device .container > div > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+.access-device .container > div > div > img {
+    width: 100%;
+}
+.access-device .container > div > div > h3 {
+    font-size: 16px;
+    margin: 20px 0 10px;
+    line-height: 1.2;
+}
+.access-device .container > div > div > ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    line-height: 1.8;
+    color: hsla(0,0%,75.3%,.8);
+    font-size: 14px;
+}
+
+/**************************/
+footer {
+    padding: 26px 8px;
+}
+footer .container {
+    display: flex;
+    flex-direction: column;
+    font-size:  12px;
+    text-align: center;
+}
+footer .container > div {
+    text-align: center;
+}
+footer .container > div > img {
+    width: 80px;
+}
+footer .container .information {
+    margin-bottom: 6px;
+}
+footer .container > p,
+footer .container .information > a {
+    color: hsla(0,0%,75.3%,.8);
+    text-decoration: none;
+    padding: 8px 12px;
+    display: inline-block;
+}
+footer .container > p {
+    margin: 0 0 20px;
+    padding: 0;
+}
+
+footer .container .copyright {
+
 }
