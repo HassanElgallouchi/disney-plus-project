@@ -25,6 +25,9 @@ section {
 /*********** START HEADER *******************/
 header {
     position: fixed;
+    width: 100%;
+    z-index: 1;
+    background-color: transparent;
 }
 header .container {
     display: flex;
@@ -37,6 +40,7 @@ header .container {
 }
 header .container .logo {
     width: 64px;
+    display: none;
 }
 header .container > .logo > img {
     
@@ -68,7 +72,13 @@ header .container > nav > ul > li > a {
     display: inline-block;
     font-size: 15px;
 }
-
+/***** Effect Scrolling Header *****/
+.show-background {
+    background-color: #090b13;
+}
+.show-logo {
+    display: block;
+}
 /*********** START HERO SECTION *************/
 .hero {
     width: 100%;
@@ -133,6 +143,12 @@ header .container > nav > ul > li > a {
 }
 .hero .container > div > div:first-child {
     border-bottom: 2px solid hsla(0,0%,100%,.2);
+}
+.arrow-rate {
+    display: block;
+    /*animation: name duration timing-function delay iteration-count direction fill-mode;
+    */animation: example 1s infinite;
+    -moz-animation: example 1s infinite;
 }
 /*********** END HERO SECTION *************/
 
@@ -245,4 +261,54 @@ footer .container > p {
 
 footer .container .copyright {
 
+}
+
+/**************** btn bottom *******************/
+.btn-bottom {
+    text-align: center;
+    position: sticky;
+    position: -webkit-sticky;
+    bottom: 0px;
+    height: 88px;
+    line-height: 88px;
+    padding: 0 20px;
+    background-color: rgba(0,0,0,.8);
+    z-index: 4;
+    transition: transform .5s ease 0s;
+    display: none;
+}
+.btn-bottom > a {
+    background-color: #0072d2;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+
+/******* keyframes *********/
+@keyframes example {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-7px);
+        -webkit-transform: translateY(-7px);
+        -moz-transform: translateY(-7px);
+        -ms-transform: translateY(-7px);
+        -o-transform: translateY(-7px);
+}
+    60% {
+        transform: translateY(-3.5px);
+        -webkit-transform: translateY(-3.5px);
+        -moz-transform: translateY(-3.5px);
+        -ms-transform: translateY(-3.5px);
+        -o-transform: translateY(-3.5px);
+}
 }
