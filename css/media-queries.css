@@ -1,0 +1,50 @@
+@media screen and (min-width: 480px) {
+    body {
+        background: #040714 url(../img/olp_hero_desktop_UKI_FR.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .partner {
+        display: block;
+    }
+    /********************** DYNAMIC-CONTENT / NEWS **************************/
+    .news .container,
+    .dynamic-content .container {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+    }
+    .tv-screen .container,
+    .avatar .container {
+        display: flex;
+        flex-direction: row-reverse;
+        align-content: center;
+    }
+    .container {
+        padding: 80px;
+    }
+    .dynamic-content .container > div,
+    .tv-screen .container > div,
+    .news .container > div,
+    .avatar .container > div {
+        width: 50%;
+        text-align: left;
+        padding: 0 2%;
+        margin-top: 20px;
+    }
+    .dynamic-content .container > div > h2,
+    .tv-screen .container > div > h2,
+    .news .container > div > h2,
+    .avatar .container > div > h2 {
+        font-size: 36px;
+    }
+    .dynamic-content .container > div > p,
+    .tv-screen .container > div > p,
+    .news .container > div > p,
+    .avatar .container > div > p {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    /************************************************/
+}
