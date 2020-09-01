@@ -1,11 +1,84 @@
+/*\
+**
+** Css MediaQueries 
+**
+*/
+
 @media screen and (min-width: 480px) {
+    /******************** RESET BODY ***********************/
     body {
         background: #040714 url(../img/olp_hero_desktop_UKI_FR.jpg);
         background-size: contain;
         background-repeat: no-repeat;
     }
+    /********************* HEADER 
+    **********************/
+    header .container > div > nav > ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .signup {
+        display: none;
+    }
+    
+    /********************* HERO SECTION ***********************/
+    .hero .container {
+        align-items: flex-start;
+        text-align: left;
+        margin: 0;
+        position: relative;
+        min-height: 80vh;
+    }
+    .hero .container > .intro > h1 {
+        font-size: 44px;
+    }
+    .hero .container > .intro > div > div:first-child {
+        border: none;
+    }
+    .hero .container > .intro > div {
+        width: 700px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+    .plan {
+        width: 40%;
+    }
+    .plan h3 {
+        font-size: 24px;
+    }
     .partner {
         display: block;
+    }
+    .partner-arrow {
+        /* display: flex;
+        justify-content: space-between;
+        width: 100%; */
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        left: 80px;
+        bottom: 0px;
+        right: 80px;
+    }
+    .partner > img {
+        width: 60%;
+    }
+    .arrow-rate {
+        width: auto;
+        margin: 0;
+    }
+    .logo {
+        display: none;
+    }
+    .signin {
+        border: 1px solid #f9f9f9;
+        letter-spacing: 1.5;
     }
     /********************** DYNAMIC-CONTENT / NEWS **************************/
     .news .container,
@@ -13,12 +86,14 @@
         display: flex;
         flex-direction: row;
         align-content: center;
+        justify-content: space-between;
     }
     .tv-screen .container,
     .avatar .container {
         display: flex;
         flex-direction: row-reverse;
         align-content: center;
+        justify-content: space-between;
     }
     .container {
         padding: 80px;
@@ -27,9 +102,8 @@
     .tv-screen .container > div,
     .news .container > div,
     .avatar .container > div {
-        width: 50%;
+        width: 48%;
         text-align: left;
-        padding: 0 2%;
         margin-top: 20px;
     }
     .dynamic-content .container > div > h2,
@@ -46,5 +120,30 @@
         line-height: 1.5;
     }
 
-    /************************************************/
+    /****************** ACCESS DDEVICE SECTION *******************/
+    .access-device .container > h2 {
+        font-size: 42px;
+    }
+    .access-device .container > div {
+        display: flex;
+        flex-direction: row;
+    }
+    .access-device .container > div > div {
+        width: 25%;
+    }
+    .access-device .container > div > div > h3 {
+        font-size: 22px;
+    }
+    .access-device .container > div > div > ul > li {
+        font-size: 16px;
+    }
+    /******************* FOOTER SECTION *********************/
+    footer .container {
+        padding: 20px 10px
+    }
+
+    /********************** OUTHER *************************/
+    .btn-bottom {
+        display: none !important;
+    }
 }

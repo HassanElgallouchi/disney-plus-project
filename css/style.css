@@ -1,12 +1,17 @@
+/*
+**
+** Css First Mobile 
+**
+*/
+
+
+/*************************** ADD FONT ***************************/
 @font-face {
     font-family: 'Avenir Roman';
     src: url(../fonts/Avenir-Roman-12.woff);
 }
-@font-face {
-    font-family: 'Teko';
-    src: url(../fonts/Teko-Regular.ttf);
-}
 
+/*************************** RESET CSS ***************************/
 * {
     box-sizing: border-box;
 }
@@ -19,67 +24,72 @@ body {
     color: #fff;
     font-family: Teko, Avenir Roman, Verdana, Geneva, Tahoma, sans-serif;
 }
-section {
+.container {
     padding: 40px 20px;
 }
-/*********** START HEADER *******************/
+
+/********************** START HEADER **********************/
 header {
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
     z-index: 1;
     background-color: transparent;
 }
 header .container {
+    z-index: 1;
+    padding: 0 20px;
+    position: relative;
+}
+header .container > div.menu {
+    position: fixed;
+    top: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     height: 52px;
-    padding: 0 20px;
-    position: relative;
+    background: transparent;
 }
-header .container .logo {
+header .container > div > .logo {
     width: 64px;
     display: none;
 }
-header .container > .logo > img {
-    
-}
-header .container > nav {
+header .container > div > nav {
     letter-spacing: 3px;
     position: fixed;
     right: 0;
+    top: 10px;
 }
-header .container > nav > ul {
+header .container > div > nav > ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
-header .container > nav > ul > li {
-}
-header .container > nav:first-child {
-    
-}
-header .container > nav > ul > .signup {
+.signup {
+    margin-right: 15px;
     display: none;
 }
-header .container > nav > ul > li > a {
+.signup > a {
+    background-color: #0072d2;
+    letter-spacing: 1.5px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+header .container > div > nav > ul > li > a {
     padding: 8px 12px;
-    /* background-color: #0072d2; */
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
     display: inline-block;
     font-size: 15px;
 }
-/***** Effect Scrolling Header *****/
-.show-background {
-    background-color: #090b13;
-}
-.show-logo {
-    display: block;
-}
-/*********** START HERO SECTION *************/
+
+
+/******************* START HERO SECTION *********************/
 .hero {
     width: 100%;
 }
@@ -90,12 +100,15 @@ header .container > nav > ul > li > a {
     text-align: center;
     margin-top: 40%;
 }
-.hero .container > img {
+.hero .container .intro {
+    width: 75%;
+}
+.hero .container > div > img {
     width: 100%;
     width: 42%;
     max-width: 160px;
 }
-.hero .container > h1 {
+.hero .container > div > h1 {
     font-size: 20px;
     margin: 0 0 10px;
 }
@@ -103,18 +116,18 @@ header .container > nav > ul > li > a {
     font-size: 24px;
     margin: 0 0 5px;
 }
-.hero .container > div > div > h3 > span {
+.hero .container > div > div > div > h3 > span {
     opacity: .7;
     font-size: 14px;
     font-weight: normal;
 }
-.hero .container > div > div > p {
+.hero .container > div > div > div > p {
     opacity: .7;
     font-size: 14px;
     margin-bottom: 5px;
     font-family: Avenir Roman;
 }
-.hero .container > div > div > a {
+.hero .container > div > div > div > a {
     background-color: #0072d2;
     letter-spacing: 1.5px;
     text-decoration: none;
@@ -125,23 +138,23 @@ header .container > nav > ul > li > a {
     width: 100%;
     display: block;
     text-align: center;
-    border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -o-border-radius: 4px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
-.hero .container > p {
+.hero .container > div > p {
     font-size: 10px;
     opacity: .7;
 }
 .partner {
     display:  none;
 }
-.hero .container > div > div.plan {
+.hero .container > div > div > div.plan {
     padding:  15px 0;
 }
-.hero .container > div > div:first-child {
+.hero .container > div >div > div:first-child {
     border-bottom: 2px solid hsla(0,0%,100%,.2);
 }
 .arrow-rate {
@@ -189,7 +202,8 @@ header .container > nav > ul > li > a {
     font-size: 14px;
 }
 
-/******************************/
+
+/********************* ACCESS DEVICE *********************/
 .access-device .container {
     display: flex;
     flex-direction: column;
@@ -233,7 +247,8 @@ header .container > nav > ul > li > a {
     font-size: 14px;
 }
 
-/**************************/
+
+/************************* FOOTER ***************************/
 footer {
     padding: 26px 8px;
 }
@@ -263,12 +278,15 @@ footer .container > p {
     margin: 0 0 20px;
     padding: 0;
 }
-
-footer .container .copyright {
-
+select, option {
+    background: #040714;
+    border: none;
+    color: #fff;
+    padding: 0;
 }
 
-/**************** btn bottom *******************/
+
+/**************** BUTTON BOTTOM *******************/
 .btn-bottom {
     text-align: center;
     position: sticky;
@@ -281,6 +299,11 @@ footer .container .copyright {
     z-index: 4;
     transition: transform .5s ease 0s;
     display: none;
+    transition: 2s;
+    -webkit-transition: 2s;
+    -moz-transition: 2s;
+    -ms-transition: 2s;
+    -o-transition: 2s;
 }
 .btn-bottom > a {
     background-color: #0072d2;
@@ -297,7 +320,7 @@ footer .container .copyright {
 }
 
 
-/******* keyframes *********/
+/******* KEYFRAMES *********/
 @keyframes example {
     0%, 20%, 50%, 80%, 100% {
         transform: translateY(0);
@@ -308,24 +331,14 @@ footer .container .copyright {
         -moz-transform: translateY(-7px);
         -ms-transform: translateY(-7px);
         -o-transform: translateY(-7px);
-}
+    }
     60% {
         transform: translateY(-3.5px);
         -webkit-transform: translateY(-3.5px);
         -moz-transform: translateY(-3.5px);
         -ms-transform: translateY(-3.5px);
         -o-transform: translateY(-3.5px);
-}
+    }
 }
 
-
-select, option {
-    /* -webkit-appearance: none; Pour avoir le contrôle de l'apparence sur WebKit/Chromium */
-    /* -moz-appearance: none; Pour avoir le contrôle sur l'apparence sur Gecko */
-    /* Pour avoir le contrôle sur l'apparence et sur Trident (IE)
-       Notez que cela fonctionne aussi sur Gecko et a des effets limités sur WebKit */  
-    background: #040714;
-    border: none;
-    color: #fff;
-    padding: 0;
-}
+/****************** EFFECT SCROLLING *****************/
