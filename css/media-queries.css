@@ -30,7 +30,7 @@
         text-align: left;
         margin: 0;
         position: relative;
-        min-height: 80vh;
+        min-height: 90vh;
     }
     .hero .container > .intro > h1 {
         font-size: 44px;

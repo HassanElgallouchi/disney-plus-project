@@ -17,7 +17,7 @@ window.onscroll = function () {
     }
 
     // condition if page height >= 400 and page width >= 480
-    if ((window.pageYOffset) >= 400 && (window.innerWidth) >= 480) {
+    if ((window.pageYOffset) >= 600 && (window.innerWidth) >= 480) {
         menu.style.background = "#090b13";
         logo.style.display = "block";
         signup.style.display = "block";
