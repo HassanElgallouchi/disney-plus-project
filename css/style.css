@@ -1,8 +1,4 @@
-/*
-**
-** Css First Mobile 
-**
-*/
+ /* Css First Mobile  */
 
 
 /*************************** ADD FONT ***************************/
@@ -160,8 +156,8 @@ header .container > div > nav > ul > li > a {
 .arrow-rate {
     display: block;
     /*animation: name duration timing-function delay iteration-count direction fill-mode;
-    */animation: example 2s infinite;
-    -moz-animation: example 2s infinite;
+    */animation: gotodown 2s infinite;
+    -moz-animation: gotodown 2s infinite;
     width: 100%;
     margin-top: 20px;
 }
@@ -285,8 +281,7 @@ select, option {
     padding: 0;
 }
 
-
-/**************** BUTTON BOTTOM *******************/
+/**************** BoTTO BUTTON IF SCROLL *******************/
 .btn-bottom {
     text-align: center;
     position: sticky;
@@ -321,7 +316,7 @@ select, option {
 
 
 /******* KEYFRAMES *********/
-@keyframes example {
+@keyframes gotodown {
     0%, 20%, 50%, 80%, 100% {
         transform: translateY(0);
     }
@@ -340,5 +335,3 @@ select, option {
         -o-transform: translateY(-3.5px);
     }
 }
-
-/****************** EFFECT SCROLLING *****************/
