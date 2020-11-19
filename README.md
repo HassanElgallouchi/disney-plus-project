@@ -6,7 +6,7 @@ HTML5, CSS3, Javascript, Git, GitHub, Flex
 ### Voir la démo => [[Click Here]](https://hassanelgallouchi.github.io/disney-plus-project/)
 
 ### Accueil Desktop
-![!](./assets/Disney_plus_home.png)
+![!](./assets/Disney_plus_home.jpg)
 
 ### Accueil Mobile
 ![!](./assets/Disney_plus_mobile.png)
